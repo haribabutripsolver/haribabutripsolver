@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:background="@color/backgroundcol"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/marginsmall"
+
+        android:id="@+id/inflatflight"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginsmall"
+            android:layout_marginRight="@dimen/marginsmall"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+            app:cardBackgroundColor="@color/white"
+
+            card_view:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/marginsmall"
+
+
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/innercardview"
+                        android:layout_width="@dimen/footercontinuemargin"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        app:cardBackgroundColor="@color/brolorange"
+
+>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginsmall"
+                        android:layout_marginTop="@dimen/marginsmall"
+                        android:layout_marginBottom="@dimen/marginsmall"
+                        android:layout_marginRight="@dimen/marginsmall"
+                        android:id="@+id/idvaluelayout"
+                        android:orientation="vertical">
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/pnrvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+                            android:textColor="@color/brolblue"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_marginBottom="@dimen/marginsmall"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="Pnr:"/>
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/confirmationno"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:textColor="@color/brolblue"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="Conf#- "/>
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/bookingconfirmationno"
+                            android:layout_width="wrap_content"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:textColor="@color/brolblue"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="BK#- "/>
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/statusvalue"
+                            android:layout_width="wrap_content"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:textColor="@color/brolblue"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="status: "/>
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_marginLeft="@dimen/marginsmall"
+                        android:layout_toRightOf="@+id/innercardview"
+                        android:id="@+id/journeydetlayout"
+                        android:orientation="horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            android:id="@+id/citieslable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/passtittlestart"
+                            app:customFont="Lato-Regular.ttf" />
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/triptype"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text=""/>
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/phoneno"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/marginsmall"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="phno:"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginsmall"
+                        android:layout_marginRight="@dimen/marginsmall"
+                        android:layout_toRightOf="@+id/innercardview"
+                        android:layout_below="@+id/journeydetlayout"
+                        android:layout_marginLeft="@dimen/marginsmall"
+                        android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/custdetails"
+                            android:layout_width="wrap_content"
+android:layout_marginTop="@dimen/marginsmall"
+android:lines="2"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/resultspagegrey"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="Name:"/>
+
+</LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/createdate"
+                            android:layout_width="wrap_content"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:textColor="@color/headerblue"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="Created: "/>
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/source"
+                            android:layout_width="wrap_content"
+android:layout_marginLeft="@dimen/marginsmall"
+
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:textColor="@color/headerblue"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="source:"/>
+                        </LinearLayout>
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/status"
+                            android:layout_marginTop="@dimen/bordermargin"
+                            android:singleLine="true"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/bordermargin"
+                            android:gravity="right"
+                            android:textColor="@color/resultspagegrey"
+                            android:textSize="@dimen/passtittlestart"
+                            android:layout_height="wrap_content"
+                            android:text="status: confirmed"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <!--    <ViewStub
+                        android:id="@+id/stubimport"
+                        android:inflatedId="@+id/panel_import"
+
+                        android:layout="@layout/inflateitineriesdisplay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       />-->
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

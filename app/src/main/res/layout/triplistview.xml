@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/itinerarylayout"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/headerimagewidth"
+        android:layout_below="@+id/itinerarylayout"
+        android:id="@+id/headerlayout"
+        android:background="@color/headerblue"
+        android:orientation="horizontal">
+
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/flightdetailsheader"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsizesmall"
+            android:text="FLIGHT DETAILS"/>
+
+
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment_container"
+        android:layout_below="@+id/headerlayout"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

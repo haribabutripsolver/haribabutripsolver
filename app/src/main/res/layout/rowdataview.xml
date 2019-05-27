@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:id="@+id/LinearLayout01"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+
+    >
+
+    <com.tripsolver.backoffice.model.ScrollViewExt
+android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+       >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/summaryheader"
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/infltheader"
+                android:layout_width="fill_parent"
+                android:background="@color/flightdetailsbackgrnd"
+                android:layout_height="@dimen/passrelheight">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Bold.ttf"
+                    android:id="@+id/summaryvalue"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/bordermargin"
+                    android:layout_height="wrap_content"
+                    android:text="summary:"/>
+                <com.tripsolver.backoffice.model.CustomButton
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/sendmail"
+                    android:layout_marginRight="@dimen/marginsmall"
+                    android:layout_marginTop="@dimen/flightinfotop"
+                    android:layout_marginBottom="@dimen/flightinfotop"
+                    android:onClick="sendEmailPopup"
+                    android:layout_alignParentRight="true"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:textColor="@color/white"
+                    android:background="@color/brolblue"
+
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="@dimen/homedimen"
+                    android:layout_marginLeft="@dimen/bordermargin"
+                    android:layout_height="@dimen/headerimagewidth"
+                    android:text="Send Mail"/>
+            </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/generateddatelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infltheader"
+
+                    android:orientation="horizontal">
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/generateddatelable"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="@dimen/bordermargin"
+                        android:textColor="@color/brolblue"
+                        android:textSize="@dimen/calandercellsize"
+                        android:layout_marginTop="@dimen/calandercellsize"
+                        android:layout_height="wrap_content"
+                        android:text="Generate date: "/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/generateddate"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/headertextsize"
+                        android:textColor="@color/textcolor"
+                        android:layout_marginTop="@dimen/calandercellsize"
+                        android:layout_height="wrap_content"
+                        android:text="12/02/2012"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/sourcevaluelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/infltheader"
+                    android:layout_toRightOf="@+id/generateddatelayout"
+                    android:layout_marginTop="@dimen/calandercellsize"
+
+                    android:orientation="horizontal">
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+
+                    android:id="@+id/sourcevaluelable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+android:layout_marginLeft="@dimen/bordermargin"
+                    android:textColor="@color/brolblue"
+                    android:textSize="@dimen/calandercellsize"
+                    android:text="Source: "/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:textSize="@dimen/headertextsize"
+                        android:textColor="@color/textcolor"
+                        android:id="@+id/sourcevalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="All"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/fromdatevaluelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/generateddatelayout"
+
+                    android:orientation="horizontal">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+
+                    android:id="@+id/fromdatevaluelable"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/bordermargin"
+                    android:textColor="@color/brolblue"
+                    android:textSize="@dimen/calandercellsize"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="Fromdate: "/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+
+                        android:id="@+id/fromdatevalue"
+                        android:layout_width="wrap_content"
+                        android:textSize="@dimen/headertextsize"
+                        android:textColor="@color/textcolor"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:text="12/02/2015"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/todatevaluelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/generateddatelayout"
+                    android:layout_toRightOf="@+id/fromdatevaluelayout"
+
+                    android:orientation="horizontal">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:textColor="@color/brolblue"
+                    android:textSize="@dimen/calandercellsize"
+                    android:id="@+id/todatevaluelable"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="@dimen/bordermargin"
+
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="ToDate: "/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+
+                    android:id="@+id/todatevalue"
+                    android:textSize="@dimen/headertextsize"
+                    android:textColor="@color/textcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="12/02/2019"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/statusvaluelayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fromdatevaluelayout"
+
+                    android:orientation="horizontal">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regualr.ttf"
+                    android:textColor="@color/brolblue"
+                    android:textSize="@dimen/calandercellsize"
+                    android:id="@+id/statusvaluelable"
+                    android:layout_marginLeft="@dimen/bordermargin"
+                    android:layout_marginBottom="@dimen/headerarrowimg"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="Status: "/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regualr.ttf"
+                        android:id="@+id/statusvalue"
+                        android:layout_marginBottom="@dimen/headerarrowimg"
+                        android:textSize="@dimen/headertextsize"
+                        android:textColor="@color/textcolor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:text="Confirmed"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fadeScrollbars="false">
+
+        <TableLayout
+
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent"
+            android:stretchColumns="0,1,2,3,4,5,6,7,8,9,10,11,12"
+
+            android:id="@+id/maintable" >
+
+        </TableLayout>
+        </HorizontalScrollView>
+
+        </LinearLayout>
+    </com.tripsolver.backoffice.model.ScrollViewExt>
+    <com.tripsolver.backoffice.model.CustomTextView
+        android:id="@+id/noresultsfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/headerimagewidth"
+        android:text="No Reports Available"/>
+
+</RelativeLayout>

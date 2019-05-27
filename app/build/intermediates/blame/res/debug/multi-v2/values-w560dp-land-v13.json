@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\Henry\\Downloads\\tripsolverbackoffice\\Iphone-Tab-in-Android-master\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w560dp-land-v13\\values-w560dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Henry\\.gradle\\caches\\transforms-2\\files-2.1\\54d94fb3877a831ed4a8640ca452912e\\res\\values-w560dp-land\\values-w560dp-land.xml",
+                    "from": {
+                        "startLines": "4,5,6",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "221,286,340",
+                        "endColumns": "64,53,50",
+                        "endOffsets": "281,335,386"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,120,174",
+                        "endColumns": "64,53,50",
+                        "endOffsets": "115,169,220"
+                    }
+                }
+            ]
+        }
+    ]
+}

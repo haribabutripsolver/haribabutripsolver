@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <group android:checkableBehavior="single">
+      <item android:id="@+id/bookinginfo"
+          android:title="@string/bookinfo"
+          android:icon="@drawable/bookingdetails" />
+
+      <item android:id="@+id/reports"
+          android:title="@string/reports"
+          android:icon="@drawable/reports" />
+
+      <item android:id="@+id/activitycount"
+          android:title="@string/activities"
+          android:icon="@drawable/activity" />
+
+      <item android:id="@+id/logout"
+          android:title="@string/logout"
+          android:icon="@drawable/logout" />
+   </group>
+</menu>

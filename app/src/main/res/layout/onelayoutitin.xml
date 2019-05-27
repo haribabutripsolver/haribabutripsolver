@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundcol"
+    android:clipToPadding="false"
+
+    android:layout_height="match_parent">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="top|fill_horizontal" >
+        <com.tripsolver.backoffice.model.ScrollViewExt
+            android:id="@+id/scrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:fillViewport="false">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:visibility="visible"
+
+                    card_view:cardBackgroundColor="@android:color/white"
+              >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="@dimen/marginsmall"
+                        android:layout_marginBottom="@dimen/marginsmall"
+
+                        android:layout_marginLeft="@dimen/marginsmall"
+                        android:layout_marginRight="@dimen/marginsmall"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                            <RelativeLayout
+                                android:id="@+id/flightslayouts"
+                                android:layout_marginTop="@dimen/marginsmall"
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_marginLeft="@dimen/bordermargin"
+                                    android:id="@+id/ailinelayout">
+
+                                    <ImageView
+                                        android:id="@+id/airlinelogo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_height="@dimen/headerarrowimg"
+                                     />
+
+                                    <com.tripsolver.backoffice.model.CustomTextView
+                                        app:customFont="Lato-Regular.ttf"
+                                        android:id="@+id/airlinename"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/bordermargin"
+
+                                        android:gravity="left"
+                                        android:textAppearance="?android:attr/textAppearanceSmall"
+                                        android:layout_gravity="center_horizontal" android:lines="2"
+                                        android:textColor="@color/resultspagegrey"
+                                        android:text="dfdffddfdfdfdfdfdfdfdfdddfdfd"/>
+                                </LinearLayout>
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/ailinelayout"
+                                    android:layout_marginTop="@dimen/marginsmall"
+                                    android:layout_marginBottom="@dimen/marginsmall"
+                                    android:id="@+id/fullayout">
+                                    <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:id="@+id/onewaylayout"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="@dimen/headerarrowimg"
+                                            android:layout_marginRight="@dimen/marginsmall"
+
+
+                                            android:layout_toLeftOf="@+id/buttonlayout"
+                                            android:layout_marginBottom="@dimen/marginsmall"
+                                            android:orientation="horizontal">
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerVertical="true"
+                                                android:orientation="vertical"
+                                                android:id="@+id/sourcedetails">
+
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    android:id="@+id/sourcecity"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="hhh"
+                                                    android:layout_gravity="right"
+                                                    android:layout_marginTop="@dimen/marginsmall"
+                                                    android:layout_marginLeft="@dimen/marginsmall"
+                                                    android:textColor="@color/resultspagegrey"
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    app:customFont="Lato-Regular.ttf"
+                                                    />
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    app:customFont="Lato-Regular.ttf"
+                                                    android:id="@+id/sourcetime"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    android:textColor="@color/black"
+
+                                                    android:text="fff"/>
+
+                                            </LinearLayout>
+
+
+
+
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                android:weightSum="1"
+                                                android:layout_marginLeft="@dimen/bordermargin"
+                                                android:layout_centerVertical="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_toRightOf="@+id/sourcedetails"
+                                                android:id="@+id/destinationcities">
+
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    android:id="@+id/destination"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+
+                                                    android:layout_gravity="left"
+                                                    android:layout_marginTop="@dimen/marginsmall"
+                                                    android:text="uuu"
+                                                    android:textColor="@color/resultspagegrey"
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    app:customFont="Lato-Regular.ttf" />
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    app:customFont="Lato-Regular.ttf"
+                                                    android:id="@+id/desttime"
+                                                    android:layout_width="wrap_content"
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    android:textColor="@color/black"
+
+                                                    android:layout_height="wrap_content"
+                                                    android:text="dd"
+                                                    />
+
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical"
+                                                android:weightSum="1"
+                                                android:layout_marginLeft="@dimen/bordermargin"
+                                                android:layout_centerVertical="true"
+                                                android:layout_alignParentTop="true"
+                                                android:layout_toRightOf="@+id/destinationcities"
+                                                android:id="@+id/linearLayout8">
+
+
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    android:id="@+id/stops"
+                                                    android:layout_marginTop="@dimen/marginsmall"
+                                                    android:layout_gravity="center"
+
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    android:textColor="@color/resultspagegrey"
+                                                    app:customFont="Lato-Regular.ttf"
+                                                    android:text="uuu"/>
+                                                <com.tripsolver.backoffice.model.CustomTextView
+                                                    android:id="@+id/journeytime"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="gyyy"
+                                                    android:textColor="@color/black"
+
+                                                    android:textSize="@dimen/calandercellsize"
+                                                    app:customFont="Lato-Regular.ttf" />
+
+                                            </LinearLayout>
+                                        </RelativeLayout>
+
+
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+
+
+
+        </com.tripsolver.backoffice.model.ScrollViewExt>
+
+    </FrameLayout>
+
+    </RelativeLayout>

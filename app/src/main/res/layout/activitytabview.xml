@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calselectbetsize"
+        android:layout_alignParentTop="true"
+        app:tabMode="scrollable"
+        app:tabPaddingEnd="@dimen/flightinfotop"
+        app:tabPaddingStart="@dimen/flightinfotop"
+
+        app:tabIndicatorColor="@color/brolblue"
+
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/white"
+        android:background="@drawable/tab_background"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tab_layout"
+        android:background="@color/backgroundcol" />
+
+
+    <com.tripsolver.backoffice.model.CustomTextView
+        android:id="@+id/noresultsfound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/headerimagewidth"
+        android:visibility="gone"
+        android:text="No Results Found"/>
+
+
+
+
+</RelativeLayout>

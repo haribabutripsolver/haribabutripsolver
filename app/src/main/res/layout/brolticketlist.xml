@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/headerlayout"
+        android:layout_below="@+id/tab_layout"
+        android:elevation="@dimen/marginsmall"
+        app:cardBackgroundColor="@color/brolblue"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/headerimagewidth">
+
+
+<HorizontalScrollView
+    android:layout_width="fill_parent"
+    android:layout_marginRight="@dimen/marginsmall"
+    android:layout_marginLeft="@dimen/marginsmall"
+
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/marginsmall"
+                android:layout_toRightOf="@+id/sixtydayactivity"
+                android:orientation="horizontal"
+                android:layout_height="fill_parent">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/totalcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/passtittlestart"
+                    android:text=""/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/clearfilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:textColor="@color/white"
+                    android:drawablePadding="@dimen/flightinfotop"
+                    android:drawableLeft="@drawable/crossicon"
+                    android:textSize="@dimen/passtittlestart"
+                    android:text="Filter"/>
+
+            </LinearLayout>
+
+
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/sevendayactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:text="7days-Activity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/passtittlestart" />
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/thirtydayactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sevendayactivity"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/marginsmall"
+                android:text="30days-Activity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/passtittlestart" />
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/sixtydayactivity"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_toRightOf="@id/thirtydayactivity"
+
+                android:layout_marginLeft="@dimen/marginsmall"
+                android:text="60days-Activity"
+                android:textColor="@color/white"
+                android:textSize="@dimen/passtittlestart" />
+
+        </RelativeLayout>
+</HorizontalScrollView>
+    </android.support.v7.widget.CardView>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/pullToRefresh"
+        android:layout_below="@+id/headerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <com.tripsolver.backoffice.model.CustomTextView
+        app:customFont="Lato-Regular.ttf"
+        android:id="@+id/noresultsfound"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/marginsmall"
+android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:textColor="@color/resultspagegrey"
+        android:textSize="@dimen/sidemargin"
+        android:layout_height="wrap_content"
+        android:text="No Restuls Found"/>
+</RelativeLayout>

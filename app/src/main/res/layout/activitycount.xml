@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+ >
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/allbookingscardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:layout_marginBottom="@dimen/marginsmall"
+
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+            app:cardBackgroundColor="@color/babypink"
+            card_view:cardCornerRadius="2dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/allbookingslayout"
+                    android:onClick="confirmedClick"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent">
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Black.ttf"
+                        android:id="@+id/allbookingscount"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/marginsmall"
+                        android:layout_marginLeft="@dimen/sidemargin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/passsidearrow"
+                        android:layout_height="wrap_content"
+                        android:text="2"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/allbookingslable"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_marginLeft="@dimen/sidemargin"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sidemargin"
+                        android:layout_height="wrap_content"
+                        android:text="All-Bookings"/>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/allbookingsimg"
+
+                    android:layout_width="@dimen/headerimagewidth"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_marginRight="@dimen/sidemargin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/allbookingsicon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passsidearrow"
+                    android:layout_height="@dimen/headerimagewidth"
+                    android:text="Confirmed"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/confirmedcardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+            app:cardBackgroundColor="@color/brolorange"
+            card_view:cardCornerRadius="2dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/confirmedlayout"
+                    android:onClick="confirmedClick"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:layout_height="fill_parent">
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Black.ttf"
+                        android:id="@+id/confirmedcount"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/marginsmall"
+                        android:layout_marginLeft="@dimen/sidemargin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/passsidearrow"
+                        android:layout_height="wrap_content"
+                        android:text="2"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/confirmedlable"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_marginLeft="@dimen/sidemargin"
+                        android:layout_centerHorizontal="true"
+
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sidemargin"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmed"/>
+
+                </LinearLayout>
+    <ImageView
+        android:id="@+id/confirmedimg"
+        android:layout_width="@dimen/headerheight"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:layout_marginLeft="@dimen/sidemargin"
+        android:layout_marginRight="@dimen/bordermargin"
+android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/confirmed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/passsidearrow"
+        android:layout_height="@dimen/headerheight"
+        android:text="Confirmed"/>
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+            app:cardBackgroundColor="@color/lightgreen"
+
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+
+            card_view:cardCornerRadius="2dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:onClick="ticketedClick"
+                android:layout_width="fill_parent"
+                android:id="@+id/ticketedLayout"
+
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Black.ttf"
+                    android:id="@+id/ticketedcount"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passsidearrow"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/ticketedlable"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sidemargin"
+                    android:layout_height="wrap_content"
+                    android:text="Ticketed"/>
+
+            </LinearLayout>
+                <ImageView
+                    android:id="@+id/ticketedimg"
+                    android:layout_width="@dimen/calselectbetsize"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_marginRight="@dimen/sidemargin"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/specialfare"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passsidearrow"
+                    android:layout_height="@dimen/calselectbetsize"
+                    android:text="Confirmed"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/shoppingcancelledcardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+            app:cardBackgroundColor="@color/lightpink"
+
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+
+            card_view:cardCornerRadius="2dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/cancelledlayout"
+
+                android:onClick="cancelledClick"
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_height="fill_parent">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Black.ttf"
+                    android:id="@+id/shoppingcancelledcount"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passsidearrow"
+                    android:layout_height="wrap_content"
+                    android:text="0"/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/shoppingcancelledlable"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sidemargin"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping-Cancelled"/>
+
+            </LinearLayout>
+    <ImageView
+        android:id="@+id/cancelledimg"
+        android:layout_width="@dimen/headerheight"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:layout_marginLeft="@dimen/sidemargin"
+        android:layout_marginRight="@dimen/sidemargin"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/cancelled"
+        android:textColor="@color/black"
+        android:textSize="@dimen/passsidearrow"
+        android:layout_height="@dimen/headerheight"
+        android:text="Confirmed"/>
+
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/unconfirmedcardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+            app:cardBackgroundColor="@color/lightbrown"
+
+            card_view:cardCornerRadius="2dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/unconfirmedlayout"
+
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+android:onClick="unconfirmedClick"
+                android:layout_height="fill_parent">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Black.ttf"
+                    android:id="@+id/unconfirmedcount"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passsidearrow"
+                    android:layout_height="wrap_content"
+                    android:text="1"/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/unconfirmedlable"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sidemargin"
+                    android:layout_height="wrap_content"
+                    android:text="Un-Confirmed"/>
+
+            </LinearLayout>
+    <ImageView
+        android:id="@+id/unconfirmedimg"
+        android:layout_width="@dimen/passrelheight"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:layout_marginLeft="@dimen/sidemargin"
+        android:layout_marginRight="@dimen/passsidearrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/unconfirmed"
+        android:textColor="@color/black"
+        android:layout_height="@dimen/passrelheight"
+        android:text="Confirmed"/>
+
+</RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

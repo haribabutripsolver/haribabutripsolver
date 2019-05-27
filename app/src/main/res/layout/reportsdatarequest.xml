@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.tripsolver.backoffice.model.CustomTextInputLayout
+        android:id="@+id/srctypelayout"
+        android:layout_marginRight="@dimen/bordermargin"
+        android:layout_marginLeft="@dimen/bordermargin"
+        app:customFont="Lato-Regular.ttf"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@id/statustype"
+        >
+    <com.tripsolver.backoffice.model.CustomEditText
+
+        android:id="@+id/srctype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/statustype"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/statustype"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/brolblue"
+        android:focusableInTouchMode="true"
+        android:hint="choose source type"
+        android:inputType="textNoSuggestions"
+        android:nextFocusDown="@+id/yourcityedit"
+        android:onClick="sourcePopUp"
+        android:paddingLeft="@dimen/bordermargin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsizesmall" />
+    </com.tripsolver.backoffice.model.CustomTextInputLayout>
+
+    <com.tripsolver.backoffice.model.CustomTextInputLayout
+        android:id="@+id/statustypelayout"
+        android:layout_below="@+id/srctypelayout"
+
+        app:customFont="Lato-Regular.ttf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@id/statustype"
+        >
+    <com.tripsolver.backoffice.model.CustomEditText
+
+        android:id="@+id/statustype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="choose status type"
+        android:inputType="textNoSuggestions"
+        android:maxLength="150"
+        android:layout_marginRight="@dimen/bordermargin"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:backgroundTint="@color/brolblue"
+        android:layout_marginTop="@dimen/sidemargin"
+        android:nextFocusDown="@+id/yourcityedit"
+        android:paddingLeft="@dimen/bordermargin"
+        android:singleLine="true"
+        android:onClick="statusPopUp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsizesmall" />
+    </com.tripsolver.backoffice.model.CustomTextInputLayout>
+    <com.tripsolver.backoffice.model.CustomTextInputLayout
+        android:id="@+id/fromdatelayout"
+        android:layout_below="@+id/statustypelayout"
+
+        app:customFont="Lato-Regular.ttf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@id/statustype"
+        >
+    <com.tripsolver.backoffice.model.CustomEditText
+
+        android:id="@+id/fromdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="From Date"
+        android:layout_marginRight="@dimen/bordermargin"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:inputType="textNoSuggestions"
+        android:maxLength="150"
+        android:backgroundTint="@color/brolblue"
+        android:layout_marginTop="@dimen/sidemargin"
+        android:nextFocusDown="@+id/yourcityedit"
+        android:paddingLeft="@dimen/bordermargin"
+        android:singleLine="true"
+        android:onClick="Fromselectdate"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsizesmall" />
+    </com.tripsolver.backoffice.model.CustomTextInputLayout>
+    <com.tripsolver.backoffice.model.CustomTextInputLayout
+        android:id="@+id/todatelayout"
+        android:layout_below="@+id/fromdatelayout"
+
+        app:customFont="Lato-Regular.ttf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:nextFocusLeft="@id/statustype"
+        >
+    <com.tripsolver.backoffice.model.CustomEditText
+
+        android:id="@+id/todate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="To Date"
+        android:inputType="textNoSuggestions"
+        android:layout_marginRight="@dimen/bordermargin"
+        android:onClick="Toselectdate"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:maxLength="150"
+        android:backgroundTint="@color/brolblue"
+        android:layout_marginTop="@dimen/sidemargin"
+        android:nextFocusDown="@+id/yourcityedit"
+        android:paddingLeft="@dimen/bordermargin"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsizesmall" />
+    </com.tripsolver.backoffice.model.CustomTextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/passrelheight"
+        android:background="@color/brolblue"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:textColor="@color/white"
+android:id="@+id/searchrecords"
+        android:text="Search"
+        android:onClick="generateReports"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/todatelayout"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/headerblue</item>
+		<item name="colorPrimaryDark">@color/headerblue</item>
+		<item name="colorAccent">@color/headerblue</item>
+		<item name="android:windowDisablePreview">true</item>
+		<item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+
+	</style>
+	<style name="CustomTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/thankuheader</item>
+		<item name="colorPrimaryDark">@color/thankuheader</item>
+		<item name="colorAccent">@color/thankuheader</item>
+		<item name="android:windowDisablePreview">true</item>
+
+		<item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+
+
+	</style>
+	<style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="@style/Theme.AppCompat.Light">
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+	<style name="ToolbarTheme" parent="AppTheme">
+		<item name="android:textColorPrimary">@color/white</item>
+		<item name="android:popupBackground">@color/white</item>
+		<item name="android:textColor">@color/black</item>
+		<item name="selectableItemBackground">?selectableItemBackgroundBorderless</item>
+		<item name="android:colorControlHighlight">@color/ripple_material_dark</item>
+		<item name="actionMenuTextColor">@color/black</item>
+		<item name="android:textColorSecondary">@color/white</item>
+	</style>
+	<style name="RadioButton">
+		<item name="android:textColor">@drawable/icon</item>
+		<item name="android:minHeight">70dp</item>
+		<item name="android:minWidth">115dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:button">@null</item>
+		<item name="android:background">@color/white</item>
+
+		<item name="android:paddingLeft">5dp</item>
+		<item name="android:paddingRight">5dp</item>
+	</style>
+
+	<style name="TextLabel" parent="TextAppearance.AppCompat">
+		<!-- Hint color and label color in FALSE state -->
+		<item name="android:textColorHint">@color/onewaybgcolor</item>
+		<item name="android:textSize">20dp</item>
+		<!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+		<item name="colorAccent">@color/headerblue</item>
+		<item name="android:thickness">0.1dp</item>
+
+		<item name="colorControlNormal">@color/backgroundcol</item>
+		<item name="colorControlActivated">@color/skyblue</item>
+	</style>
+	<style name="MyTabLayout" parent="Base.Widget.Design.TabLayout">
+		<item name="tabTextAppearance">@style/MyTabTextAppearance</item>
+	</style>
+
+	<style name="MyTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+		<item name="android:textSize">12dp</item>
+
+		<item name="textAllCaps">true</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="colorPrimary">@color/headerblue</item>
+		<item name="colorPrimaryDark">@color/headerblue</item>
+		<item name="colorAccent">@color/headerblue</item>
+	</style>
+	<style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+		<item name="spinBars">true</item>
+		<item name="color">@android:color/black</item>
+	</style>
+
+	<!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/white"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/AppTheme" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/clientname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brol"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sidemargin"
+            android:layout_marginRight="@dimen/sidemargin"
+            android:layout_marginLeft="@dimen/sidemargin"
+          android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:layout_width="@dimen/homedimen"
+            android:layout_height="@dimen/homedimen"
+            android:layout_marginLeft="@dimen/headerheight"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tripsolverlogo"/>
+        <LinearLayout
+            android:id="@+id/searchiconlayout"
+android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="fill_parent">
+            <ImageView
+                android:id="@+id/searchicon"
+
+                android:layout_width="@dimen/passsidearrow"
+                android:layout_height="@dimen/passsidearrow"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/headerheight"
+                android:layout_marginRight="@dimen/bordermargin"
+                android:layout_centerVertical="true"
+                android:src="@drawable/searchicon"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

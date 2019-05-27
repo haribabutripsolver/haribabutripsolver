@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/popupbackgrnd"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <com.tripsolver.backoffice.model.CustomEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/emailid"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:layout_alignStart="@+id/statustype"
+            android:layout_marginTop="@dimen/headerarrowimg"
+            android:backgroundTint="@color/brolblue"
+            android:focusableInTouchMode="true"
+            android:hint="Select filter type"
+            android:drawableRight="@drawable/downarrow"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:inputType="textNoSuggestions"
+            android:maxLength="150"
+            android:nextFocusDown="@+id/yourcityedit"
+            android:onClick="sourcePopUp"
+            android:paddingLeft="@dimen/bordermargin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall" />
+
+        <com.tripsolver.backoffice.model.CustomEditText
+
+            android:id="@+id/emailid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:hint="Enter Email Id"
+            android:inputType="textNoSuggestions"
+            android:maxLength="150"
+
+            android:layout_below="@+id/filtertype"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:backgroundTint="@color/brolblue"
+            android:layout_marginTop="@dimen/sidemargin"
+            android:nextFocusDown="@+id/yourcityedit"
+            android:paddingLeft="@dimen/bordermargin"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizesmall" />
+
+        <Button
+            android:layout_width="@dimen/homedimen"
+            android:layout_height="@dimen/passimgheight"
+            android:background="@color/brolblue"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:layout_marginBottom="@dimen/headerarrowimg"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:id="@+id/sendreport"
+            android:text="Send Report"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/searchvalue"/>
+    </LinearLayout>
+
+</RelativeLayout>

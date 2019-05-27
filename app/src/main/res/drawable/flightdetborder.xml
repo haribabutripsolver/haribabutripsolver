@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Border -->
+    <item>
+        <shape>
+            <solid android:color="@color/flightdetborder"></solid>
+        </shape>
+    </item>
+    <!-- Body -->
+    <item
+        android:bottom="@dimen/viewheight"
+        android:top="1sp"
+
+        >
+        <shape>
+            <solid android:color="@color/babypink"></solid>
+        </shape>
+    </item>
+</layer-list>

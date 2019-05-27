@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	
+	
+	<color name="tabMedium">#a7a7aa</color>
+	<color name="tabDark">#a7a7aa</color>
+	<color name="tabTransparent">#10ffffff</color>
+
+
+	<color name="theme_color_primary">#255295</color>
+	<color name="theme_color_primary_light">#255295</color>
+	<color name="theme_color_accent">#084e43</color>
+
+<color name="bluecolor">#255295</color>
+	<color name="greencolor">#8FBE4B</color>
+	<color name="tab_border">#a7a7aa</color>
+	<color name="tab_background">#f6f6f7</color>
+	<color name="bluewhite">#93A7CA</color>
+
+<color name="brolblue">#265094</color>
+	<color name="brolgreen">#8dc96c</color>
+	<color name="brollightblue">#2fa4b1</color>
+	<color name="brolorange">#fdba52</color>
+	<color name="brolbackgroundcolor">#f1f8ed</color>
+
+	<color name="lightgreen">#b9eeb9</color>
+	<color name="lightpink">#f6bcbc</color>
+	<color name="lightbrown">#e6c295</color>
+
+
+	<color name="darkpink">#ed7979</color>
+	<color name="darkbrown">#d79f59</color>
+
+
+
+	<color name="colorPrimary">#326eb7</color>
+	<color name="colorPrimaryDark">#326eb7</color>
+	<color name="babypink">#fdf8e5</color>
+	<color name="white">#FFFFFF</color>
+	<color name="orange">#024493</color>
+	<color name="textcolor">#808080</color>
+	<color name="bluewhitemix">#7498c4</color>
+	<color name="black">#282c3f</color>
+	<color name="grey">#93959f</color>
+	<color name="skyblue">#87ceeb</color>
+	<color name="onewaybgcolor">#024493</color>
+	<color name="linecolor">#d4d4d4</color>
+	<color name="gpluscolorcode">#dd4b39</color>
+	<color name="fbcolorcode">#3b5998</color>
+	<color name="flightdetborder">#fff3c5</color>
+	<color name="transparent">#00FFFFFF</color>
+	<color name="introtop">#1d84b8</color>
+	<color name="introbottom">#2fabd3</color>
+	<color name="dullblue">#4f80bb</color>
+	<color name="gradient">#024493</color>
+	<color name="radio_button_selected_color">#ff33b5e5</color>
+	<color name="radio_button_unselected_color">#e0e0e0</color>
+	<color name="red">#FF0000</color>
+	<color name="dullorange">#FFC966</color>
+	<color name="flightdetailsbackgrnd"> #e4e4e4</color>
+	<color name="footerorange">#ffb732</color>
+	<color name="backgroundcol">#F5F5F5</color>
+	<color name="lightgrey">#e4e4e4</color>
+	<color name="gradientdark">#FF6E00</color>
+	<color name="headerblue">#3775dd</color>
+	<color name="searchcancelbackground">#075d8d</color>
+	<color name="merooncolor">#ce381e</color>
+	<color name="dullgrey">#B0A8A0</color>
+	<color name="thankublue">#B5B5B5</color>
+
+
+
+	<color name="boxcolor">#e4e4e4</color>
+	<color name="thankuheader">#82a61f</color>
+	<color name="darkgreen">#278824</color>
+	<color name="introbackgroundcolor">#2797C5</color>
+	<color name="faredettextcolor">#C76353</color>
+	<color name="lightblack">#323232</color>
+	<color name="lightwhite">#F7F9F9</color>
+	<color name="resultspagegrey">#636363</color>
+	<color name="rippleffect">#daf2ff</color>
+	<color name="colorWhite">#ffffff</color>
+	<color name="colorBlack">#000000</color>
+	<color name="calendartittle">#666666</color>
+	<color name="browncolor">#EFEFEF</color>
+	<color name="bluewhitecol">#8DC6E6</color>
+
+	<color name="dot_dark_screen1">#B6B6B6</color>
+	<color name="dot_dark_screen2">#B6B6B6</color>
+	<color name="dot_dark_screen3">#B6B6B6</color>
+	<color name="dot_dark_screen4">#B6B6B6</color>
+	<color name="dot_dark_screen5">#B6B6B6</color>
+	<color name="dot_dark_screen6">#B6B6B6</color>
+
+
+
+	<!-- dots active colors -->
+	<color name="dot_light_screen1">#F8F8FF</color>
+	<color name="dot_light_screen2">#F8F8FF</color>
+	<color name="dot_light_screen3">#F8F8FF</color>
+	<color name="dot_light_screen4">#F8F8FF</color>
+	<color name="dot_light_screen5">#F8F8FF</color>
+	<color name="dot_light_screen6">#F8F8FF</color>
+
+
+	<array name="array_dot_active">
+		<item>@color/grey</item>
+		<item>@color/grey</item>
+		<item>@color/grey</item>
+		<item>@color/grey</item>
+		<item>@color/grey</item>
+		<item>@color/grey</item>
+
+	</array>
+
+	<array name="array_dot_inactive">
+		<item>@color/backgroundcol</item>
+		<item>@color/backgroundcol</item>
+		<item>@color/backgroundcol</item>
+		<item>@color/backgroundcol</item>
+		<item>@color/backgroundcol</item>
+		<item>@color/backgroundcol</item>
+
+	</array>
+
+	<string name="sevendayactivity"><u>7day Activity</u>.</string>
+
+</resources>

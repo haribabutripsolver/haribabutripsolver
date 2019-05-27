@@ -1,0 +1,56 @@
+package com.tripsolver.backoffice.model;
+
+/**
+ * Created by vanaja on 1/25/2017.
+ */
+
+
+import android.content.Context;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
+public class NetworkUtil {
+
+    public static int TYPE_WIFI = 1;
+    public static int TYPE_MOBILE = 2;
+    public static int TYPE_NOT_CONNECTED = 0;
+    public static int getConnectivityStatus(Context context) {
+        try {
+            ConnectivityManager cm = (ConnectivityManager) context
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkInfo activeNetwork = cm.getActiveNetworkInfo();
+        if (null != activeNetwork) {
+            if(activeNetwork.getType() == ConnectivityManager.TYPE_WIFI)
+                return TYPE_WIFI;
+
+            if(activeNetwork.getType() == ConnectivityManager.TYPE_MOBILE)
+                return TYPE_MOBILE;
+        }
+        else if(activeNetwork==null)
+        {
+            return 0;
+        }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+            return TYPE_MOBILE;
+        }
+
+        return TYPE_MOBILE;
+    }
+
+    public static String getConnectivityStatusString(Context context) {
+        int conn = NetworkUtil.getConnectivityStatus(context);
+        String status = null;
+        if (conn == NetworkUtil.TYPE_WIFI) {
+
+        } else if (conn == NetworkUtil.TYPE_MOBILE) {
+
+        } else if (conn == NetworkUtil.TYPE_NOT_CONNECTED) {
+            status = "Not connected to Internet";
+        }
+        return status;
+    }
+}

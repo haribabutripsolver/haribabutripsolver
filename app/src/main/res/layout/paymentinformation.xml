@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/infltheader"
+        android:layout_width="fill_parent"
+        android:background="@color/babypink"
+        android:layout_height="@dimen/passimgheight">
+        <ImageView
+            android:id="@+id/paymentcon"
+            android:layout_width="@dimen/headerarrowimg"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_centerVertical="true"
+
+            android:layout_height="@dimen/headerarrowimg"
+            android:src="@drawable/paymentinfoblue"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/paymenttittle"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/marginsmall"
+
+            android:layout_height="wrap_content"
+            android:text="Payment Information"
+            android:layout_toRightOf="@+id/paymentcon"
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/headerarrowimg"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:layout_below="@+id/infltheader"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/cardtypetittle"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Type: "
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/cardtypevalue"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/cardnotittle"
+                app:customFont="Lato-Regular.ttf"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Number: "
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/cardnovalue"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+
+                android:id="@+id/verificationnotittle"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verification Number: "
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/verificationnovalue"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+
+                android:id="@+id/cardholdernametittle"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CardHolders Name: "
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/cardholdernamevalue"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/expiredatetittle"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Expire Date: "
+                app:customFont="Lato-Regular.ttf"
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/expiredatevalue"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bordermargin"
+            android:orientation="horizontal">
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/addresstittle"
+                app:customFont="Lato-Regular.ttf"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+
+                android:visibility="visible"
+                android:textColor="@color/brolblue"
+                android:textSize="@dimen/calandercellsize"
+                android:layout_gravity="center"/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/addressvalue"
+android:gravity="bottom"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+
+                android:textAppearance="?android:attr/textAppearanceSmall"
+
+                android:visibility="visible"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/headertextsize"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+    >
+            <ScrollView
+                android:layout_width="fill_parent"
+
+                android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/homedimen"
+                android:layout_marginLeft="@dimen/sidemargin"
+
+                android:layout_marginRight="@dimen/sidemargin"
+                android:layout_height="fill_parent">
+
+<ImageView
+    android:layout_width="@dimen/flipfarehome"
+    android:layout_height="@dimen/scrollviewbottommargin"
+    android:layout_gravity="center"
+    android:src="@drawable/tripsolverlogo"/>
+                <com.tripsolver.backoffice.model.CustomEditText
+
+                    android:id="@+id/bofname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your agency id*"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="150"
+                    android:backgroundTint="@color/brolblue"
+                    android:layout_marginTop="@dimen/sidemargin"
+                    android:nextFocusDown="@+id/yourcityedit"
+                    android:paddingLeft="@dimen/bordermargin"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsizesmall" />
+
+                <com.tripsolver.backoffice.model.CustomEditText
+
+                    android:id="@+id/usernameedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your user name*"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="150"
+                    android:backgroundTint="@color/brolblue"
+                    android:layout_marginTop="@dimen/sidemargin"
+                    android:nextFocusDown="@+id/yourcityedit"
+                    android:paddingLeft="@dimen/bordermargin"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsizesmall" />
+
+
+
+                <com.tripsolver.backoffice.model.CustomEditText
+
+                    android:id="@+id/passwordedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:hint="Enter your password*"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/brolblue"
+
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:maxLength="30"
+                    android:nextFocusDown="@+id/yourcityedit"
+                    android:paddingLeft="@dimen/bordermargin"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsizesmall" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:layout_height="wrap_content">
+
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/termsandcondition"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/passsidearrow"
+
+                        android:layout_alignParentStart="true"
+
+                        android:scaleX="0.80"
+                        android:scaleY="0.8"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/passsidearrow"
+                        android:text="By clicking on Login I agree to all "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/checkboxtextsize" />
+
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/conditionslink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/termsandcondition"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/headerarrowimg"
+                        android:layout_gravity="center"
+                        android:autoLink="web"
+                        android:onClick="gotoWebTermsandCondtions"
+                        android:text="Terms and Conditions"
+                        android:textColor="@color/headerblue" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_marginRight="@dimen/sidemargin"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:layout_height="wrap_content">
+
+
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/forgotpassword"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Forgot your Pin?"
+                        android:onClick="forgotPasswordOnClick"
+                        android:visibility="gone"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizesmall"
+                        android:layout_gravity="center"/>
+                    <com.tripsolver.backoffice.model.CustomButton
+                        android:id="@+id/loginbt"
+                        android:layout_width="fill_parent"
+                        android:text="Login"
+                        android:layout_marginTop="@dimen/sidemargin"
+
+                        android:layout_below="@id/forgotpassword"
+                        android:textSize="@dimen/sidemargin"
+                        android:textColor="@color/white"
+android:onClick="loginOnClick"
+android:background="@color/brolblue"
+                        android:layout_height="@dimen/headerheight"
+                        android:elevation="@dimen/bordermargin"
+                        android:orientation="vertical"
+                        />
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        android:id="@+id/notmember"
+
+                        android:layout_below="@id/loginbt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:text="Not a Register Member?"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsizesmall"
+                        android:layout_gravity="center"/>
+
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        android:id="@+id/register"
+                        android:layout_below="@id/loginbt"
+                        android:layout_marginLeft="@dimen/marginsmall"
+                        android:layout_toRightOf="@+id/notmember"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+
+                        android:text="Register"
+                        android:textColor="@color/darkgreen"
+                        android:textSize="@dimen/textsizesmall"
+                        />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+</RelativeLayout>

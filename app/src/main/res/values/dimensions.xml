@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="arrowinbt">15dp</dimen>
+    <dimen name="headerheight">50dp</dimen>
+    <dimen name="marginsmall">5dp</dimen>
+    <dimen name="textsizesmall">13dp</dimen>
+    <dimen name="sidemargin">20dp</dimen>
+    <dimen name="bordermargin">10dp</dimen>
+    <dimen name="headertextsize">13dp</dimen>
+    <dimen name="headerimagewidth">30dp</dimen>
+    <dimen name="headerarrowimg">15dp</dimen>
+    <dimen name="scrollviewbottommargin">80dp</dimen>
+    <dimen name="calanderballsize">43dp</dimen>
+    <dimen name="passrelheight">40dp</dimen>
+    <dimen name="calselectbetsize">37dp</dimen>
+    <dimen name="tabreturn">68dp</dimen>
+    <dimen name="passimgheight">35dp</dimen>
+    <dimen name="leftspaceforcity">29dp</dimen>
+    <dimen name="passtittleleft">21dp</dimen>
+    <dimen name="passtittlestart">11dp</dimen>
+    <dimen name="passsidearrow">25dp</dimen>
+    <dimen name="edittextwidth">160dp</dimen>
+    <dimen name="buttonposition">110dp</dimen>
+    <dimen name="customerverifiedtop">8dp</dimen>
+    <dimen name="headerdetailswidth">70dp</dimen>
+    <dimen name="giftbannerelementswidth">77dp</dimen>
+    <dimen name="calandercellsize">12dp</dimen>
+    <dimen name="tabtittleleft">57dp</dimen>
+    <dimen name="loadingmargintop">140dp</dimen>
+    <dimen name="footerheight">60dp</dimen>
+    <dimen name="paymentedittext">350dp</dimen>
+    <dimen name="checkboxtextsize">18dp</dimen>
+    <dimen name="checkboxleft">-20dp</dimen>
+    <dimen name="flightdimen">45dp</dimen>
+    <dimen name="flipfarehome">200dp</dimen>
+    <dimen name="viewwidthflightdet">270dp</dimen>
+    <dimen name="viewheight">1dp</dimen>
+    <dimen name="tabwidth">95dp</dimen>
+
+    <dimen name="paymentverified">2dp</dimen>
+
+    <dimen name="flightdetmarginright">65dp</dimen>
+
+    <dimen name="flightdetmarginleft">75dp</dimen>
+
+    <dimen name="autocompltcitysearchwidth">230dp</dimen>
+
+    <dimen name="autocompltcitysearchtop">6dp</dimen>
+    <dimen name="tittlealerpopupheight">350dp</dimen>
+    <dimen name="additionalalerpopupheight">600dp</dimen>
+    <dimen name="citydisplaywidth">250dp</dimen>
+    <dimen name="alerpopupwidth">700dp</dimen>
+    <dimen name="alerpopupheight">800dp</dimen>
+    <dimen name="smallalerpopupheight">245dp</dimen>
+
+    <dimen name="segmenttittlesize">14dp</dimen>
+
+    <dimen name="tabminwidthfilter">90dp</dimen>
+    <dimen name="tabminwidth">120dp</dimen>
+
+
+    <dimen name="flightinfotop">3dp</dimen>
+
+    <dimen name="homedimen">100dp</dimen>
+    <dimen name="layerwidth">135dp</dimen>
+
+    <dimen name="searchbthometextsize">23dp</dimen>
+
+    <dimen name="passengercountdonebtwidth">300dp</dimen>
+
+    <dimen name="footercontinuewidth">150dp</dimen>
+    <dimen name="footercontinuemargin">130dp</dimen>
+
+    <dimen name="shadowheight">55dp</dimen>
+
+    <dimen name="corner_radius">8dp</dimen>
+
+    <dimen name="tab_space_top">4dp</dimen>
+
+    <dimen name="tab_space">0dp</dimen>
+
+    <dimen name="tab_space_plus1">3dp</dimen>
+
+    <dimen name="tab_space_bottom_line">36sp</dimen>
+    <dimen name="tab_space_unselected_top">6sp</dimen>
+    <array name="autosize_text_sizes">
+        <item>10sp</item>
+        <item>12sp</item>
+        <item>20sp</item>
+        <item>40sp</item>
+        <item>100sp</item>
+    </array>
+
+
+
+</resources>  

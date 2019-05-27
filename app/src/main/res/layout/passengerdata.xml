@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginsmall"
+
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/infltheader"
+        android:layout_width="fill_parent"
+        android:background="@color/flightdetailsbackgrnd"
+        android:layout_height="@dimen/headerimagewidth">
+    <com.tripsolver.backoffice.model.CustomTextView
+        app:customFont="Lato-Regular.ttf"
+        android:id="@+id/passengerInfotittle"
+android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passenger Information:"
+
+        android:visibility="visible"
+        android:textColor="@color/black"
+        android:textSize="@dimen/headertextsize"
+        />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:layout_marginLeft="@dimen/bordermargin"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/passengertittle"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tittle: "
+
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/passengertittlevalue"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:text="Mr."
+
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:visibility="visible"
+            app:customFont="Lato-Regular.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/passengertittlefname"
+            app:customFont="Lato-Regular.ttf"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First Name: "
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/passengertittlefnamevalue"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="b"
+
+            android:visibility="visible"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/passengertittlemname"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Middle Name: "
+            app:customFont="Lato-Regular.ttf"
+
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/passengertittlemnamevalue"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="8955522222"
+
+            android:visibility="visible"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/passengertittlelname"
+            app:customFont="Lato-Regular.ttf"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LastName: "
+
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/passengertittlelnamevalue"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" haiharihii@gmail.com"
+
+            android:visibility="visible"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/gendertittle"
+            app:customFont="Lato-Regular.ttf"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender: "
+
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/gendervalue"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" male"
+
+            android:visibility="visible"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bordermargin"
+        android:orientation="horizontal">
+        <com.tripsolver.backoffice.model.CustomTextView
+            android:id="@+id/dobtittle"
+            app:customFont="Lato-Regular.ttf"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOB: "
+
+            android:visibility="visible"
+            android:textColor="@color/brolblue"
+            android:textSize="@dimen/calandercellsize"
+            android:layout_gravity="center"/>
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/dobvalue"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 20/04/1995"
+
+            android:visibility="visible"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/headertextsize"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/white"
+
+    android:layout_height="match_parent">
+
+    <!--<RelativeLayout
+        android:id="@+id/headerlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/headerheight"
+
+        android:background="@color/backgroundcol"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/marginsmall">
+
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/destcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/viewheight"
+            android:textColor="@color/lightblack"
+            android:text=""
+
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/headerarrowimg"
+            android:layout_toRightOf="@+id/headerarrow" />
+
+        <ImageView
+            android:id="@+id/headerarrow"
+            android:layout_width="@dimen/headerimagewidth"
+            android:layout_height="@dimen/sidemargin"
+
+            android:paddingTop="@dimen/marginsmall"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/viewheight"
+            android:layout_marginStart="@dimen/viewheight"
+            android:layout_marginBottom="@dimen/bordermargin"
+            android:layout_toRightOf="@+id/srccity"
+
+            android:src="@drawable/arrowblack"/>
+
+        <com.tripsolver.backoffice.model.CustomTextView
+            app:customFont="Lato-Regular.ttf"
+            android:id="@+id/srccity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightblack"
+            android:layout_toRightOf="@+id/flightimage"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textSize="@dimen/headerarrowimg"
+            />
+
+        <ImageView
+            android:id="@+id/flightimage"
+            android:layout_width="@dimen/headerimagewidth"
+            android:layout_height="@dimen/headerimagewidth"
+            android:textColor="@color/lightblack"
+            android:layout_marginLeft="@dimen/sidemargin"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:src="@drawable/flightheader"
+            android:textSize="@dimen/headertextsize"
+            />
+        <RelativeLayout
+            android:id="@+id/fareruleslayout"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_height="wrap_content">
+
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/farevalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginsmall"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsizesmall"
+
+                android:layout_marginRight="@dimen/sidemargin"
+                android:text=""/>
+            <com.tripsolver.backoffice.model.CustomTextView
+                app:customFont="Lato-Regular.ttf"
+                android:id="@+id/farerules"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/farevalue"
+                android:textColor="@color/headerblue"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+
+                android:text="@string/farerulesvalue"
+                android:textSize="@dimen/passtittlestart"
+                android:layout_marginRight="@dimen/passsidearrow"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>-->
+    <!-- <com.tripsolver.backoffice.model.CustomTextView            app:customFont="Lato-Regular.ttf"
+         android:id="@+id/infanttaxvaluelp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignEnd="@+id/datevalues"
+         android:layout_alignParentTop="true"
+         android:layout_marginEnd="10sp"
+         android:layout_marginTop="497sp"
+
+         android:layout_weight="1"
+         android:gravity="right"
+         android:text="$ 737.46"
+         android:textColor="@color/black"
+         android:textSize="@dimen/headerarrowimg" />-->
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/adultlayout"
+            android:background="@color/white"
+
+
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/infltheader"
+                android:layout_width="fill_parent"
+                android:background="@color/babypink"
+                android:layout_height="@dimen/headerimagewidth">
+                <ImageView
+                    android:id="@+id/fareicon"
+                    android:layout_width="@dimen/headerarrowimg"
+                    android:layout_marginLeft="@dimen/headerarrowimg"
+android:layout_centerVertical="true"
+                    android:layout_height="@dimen/headerarrowimg"
+                    android:src="@drawable/fareinfoblue"/>
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/passengerInfotittle"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:layout_toRightOf="@+id/fareicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fare Information:"
+
+                    android:visibility="visible"
+                    android:textColor="@color/brolblue"
+                    android:textSize="@dimen/headerarrowimg"
+                    />
+            </RelativeLayout>
+            <com.tripsolver.backoffice.model.CustomTextView
+                android:id="@+id/pricetittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:customFont="Lato-Bold.ttf"
+                android:visibility="gone"
+                android:textSize="@dimen/checkboxtextsize"
+
+                android:layout_marginLeft="@dimen/sidemargin"
+                android:textColor="@color/headerblue"
+                android:layout_marginTop="@dimen/headerarrowimg"
+                android:text=""/>
+
+
+            <LinearLayout
+                android:id="@+id/basefarelayout"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="@dimen/headerarrowimg"
+
+                android:layout_below="@+id/infltheader"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:text="Base Fare:"
+                    android:textColor="@color/black" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/marginsmall"
+                        android:layout_marginBottom="@dimen/flightinfotop"
+                        android:id="@+id/basefarevaluelayout"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/basefare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/basefarevalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:layout_marginTop="@dimen/bordermargin"
+
+                        android:visibility="gone"
+                        android:id="@+id/childbasefarevaluelayout"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childbasefare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childbasefarevalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:text=""
+
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:visibility="gone"
+                        android:id="@+id/infantbasefarevaluelayout"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantbasefare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantbasefarevalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+                            android:text=""
+
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:visibility="gone"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:id="@+id/infantbasefarevaluelayoutlp"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantbasefarelp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantbasefarevaluelp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+                            android:text=""
+
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/roottaxlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/basefarelayout"
+                android:layout_marginTop="@dimen/paymentverified"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="Taxes:"
+
+                    android:textColor="@color/black" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/taxlayout"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/tax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:gravity="left"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/taxvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/childtaxlayout"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:visibility="gone"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childtax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="left"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childtaxvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/infanttaxlayout"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/flightinfotop"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infanttax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infanttaxvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/infanttaxlayoutlp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:visibility="gone">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infanttaxlp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text=""
+                            android:textColor="@color/textcolor"
+
+                            android:textSize="@dimen/headerarrowimg" />
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infanttaxlpvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/rootdiscountlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_below="@+id/roottaxlayout"
+                android:layout_marginTop="@dimen/paymentverified"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:textSize="@dimen/checkboxtextsize"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:text="Discount:"
+
+                    android:textColor="@color/black" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/discountlayout"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:visibility="gone"
+
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:gravity="left"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/discountvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/childdiscountlayout"
+                        android:layout_marginBottom="@dimen/paymentverified"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:visibility="gone"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childdiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="left"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/childdiscountvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:layout_weight="1"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/infantdiscountlayout"
+                        android:visibility="gone"
+                        android:layout_marginBottom="@dimen/flightinfotop"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantdiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:text=""
+
+                            android:textColor="@color/textcolor" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/infantdiscountvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/headerarrowimg"
+                            android:gravity="right"
+
+                            android:text=""
+                            android:textColor="@color/black" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/totaldiscountlayout"
+                        android:visibility="visible"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:layout_marginBottom="@dimen/bordermargin"
+                        android:gravity="center_vertical|center_horizontal">
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/totaldiscount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:textSize="@dimen/checkboxtextsize"
+                            android:text="Total discount"
+
+                            android:textColor="@color/darkgreen" />
+
+
+                        <com.tripsolver.backoffice.model.CustomTextView
+                            app:customFont="Lato-Regular.ttf"
+                            android:id="@+id/totaldiscountvalue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/sidemargin"
+                            android:layout_marginTop="@dimen/marginsmall"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/checkboxtextsize"
+                            android:gravity="right"
+                            android:textColor="@color/darkgreen"
+                            android:text=""
+                            />
+
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/passimgheight"
+                android:layout_marginTop="@dimen/marginsmall"
+                android:background="@color/flightdetailsbackgrnd"
+                android:layout_below="@+id/rootdiscountlayout"
+                android:visibility="visible"
+                android:id="@+id/grandtotalvaluelayout"
+
+                >
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/headerarrowimg"
+                    app:customFont="Lato-Bold.ttf"
+
+                    android:layout_marginLeft="@dimen/sidemargin"
+                    android:text="Total "
+                    android:textColor="@color/black" />
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/grandtotalvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/sidemargin"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:layout_centerVertical="true"
+
+                    app:customFont="Lato-Bold.ttf"
+
+                    android:text="ddddddddddd"
+                    android:textColor="@color/onewaybgcolor" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/passimgheight"
+                android:layout_below="@+id/grandtotalvaluelayout"
+                android:layout_centerHorizontal="true"
+                android:background="@color/babypink"
+                android:visibility="gone"
+                android:id="@+id/giftlayout"
+                android:orientation="horizontal"
+                >
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/getlable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:textSize="@dimen/headerarrowimg"
+                    app:customFont="Lato-Bold.ttf"
+                    android:gravity="center_vertical"
+android:layout_marginLeft="@dimen/headerimagewidth"
+                    android:text="Get "
+                    android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/amazimg"
+                    android:layout_width="@dimen/fab_margin"
+                    android:layout_height="@dimen/fab_margin"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:layout_marginTop="@dimen/marginsmall"
+                    android:textSize="@dimen/checkboxtextsize"
+                    android:layout_toRightOf="@+id/getlable"
+
+                    android:layout_centerVertical="true"
+
+                    android:textColor="@color/black" />
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/giftamnt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:layout_toRightOf="@+id/amazimg"
+
+                    android:layout_gravity="right"
+                    android:textSize="@dimen/headerarrowimg"
+                    android:gravity="center"
+
+                    app:customFont="Lato-Bold.ttf"
+                    android:layout_centerVertical="true"
+
+                    android:text=""
+                    android:textColor="@color/black" />
+
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    android:id="@+id/amazonlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/headerarrowimg"
+                    app:customFont="Lato-Regular.ttf"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/giftamnt"
+
+                    android:text="Amazon Gift Card"
+                    android:textColor="@color/black" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

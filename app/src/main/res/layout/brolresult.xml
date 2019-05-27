@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clipToPadding="false"
+    android:background="@color/backgroundcol"
+
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/inflatflight"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="@dimen/marginsmall"
+            android:layout_marginBottom="@dimen/marginsmall"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bordermargin"
+            android:layout_marginRight="@dimen/bordermargin"
+            android:visibility="visible"
+            android:elevation="@dimen/paymentverified"
+            app:cardBackgroundColor="@color/lightpink"
+            card_view:cardBackgroundColor="@android:color/lightpink"
+            card_view:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/marginsmall"
+
+                android:layout_marginTop="@dimen/bordermargin"
+                android:layout_marginBottom="@dimen/bordermargin"
+                android:layout_marginLeft="@dimen/marginsmall"
+                android:layout_marginRight="@dimen/marginsmall"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/triplogo"
+                        android:layout_width="@dimen/headerarrowimg"
+                        android:layout_height="@dimen/headerarrowimg"
+
+                        android:src="@drawable/unconfirmed"
+                        />
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/citieslable"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/marginsmall"
+
+                    android:textColor="@color/resultspagegrey"
+                    android:textSize="@dimen/passtittlestart"
+                    android:layout_height="wrap_content"
+                    android:text="DFW - HYD"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/triptype"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/bordermargin"
+
+                        android:textColor="@color/resultspagegrey"
+                        android:textSize="@dimen/passtittlestart"
+                        android:layout_height="wrap_content"
+                        android:text="Roundtrip"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/confirmationno"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/marginsmall"
+android:layout_marginTop="@dimen/bordermargin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/passtittlestart"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmation - RJ1112kdkd2"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/bookingconfirmationno"
+                        android:layout_width="wrap_content"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/bordermargin"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/passtittlestart"
+                        android:layout_height="wrap_content"
+                        android:text="Bookingid - RJ1112kdkd2"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <com.tripsolver.backoffice.model.CustomTextView
+                    app:customFont="Lato-Regular.ttf"
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/marginsmall"
+                    android:layout_marginTop="@dimen/bordermargin"
+                    android:textColor="@color/resultspagegrey"
+                    android:textSize="@dimen/passtittlestart"
+                    android:layout_height="wrap_content"
+                    android:text="Haribabu battula"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/createdate"
+                        android:layout_width="wrap_content"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/bordermargin"
+                        android:layout_marginTop="@dimen/bordermargin"
+                        android:textColor="@color/resultspagegrey"
+                        android:textSize="@dimen/passtittlestart"
+                        android:layout_height="wrap_content"
+                        android:text="Created: 2 hours ago"/>
+                    <com.tripsolver.backoffice.model.CustomTextView
+                        app:customFont="Lato-Regular.ttf"
+                        android:id="@+id/status"
+                        android:layout_marginTop="@dimen/bordermargin"
+android:singleLine="true"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/bordermargin"
+                        android:gravity="right"
+                        android:textColor="@color/resultspagegrey"
+                        android:textSize="@dimen/passtittlestart"
+                        android:layout_height="wrap_content"
+                        android:text="status: confirmed"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--    <ViewStub
+                        android:id="@+id/stubimport"
+                        android:inflatedId="@+id/panel_import"
+
+                        android:layout="@layout/inflateitineriesdisplay"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                       />-->
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

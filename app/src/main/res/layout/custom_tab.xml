@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"   xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:elevation="@dimen/marginsmall"
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        >
+<RelativeLayout
+    android:id="@+id/tablayout"
+    android:layout_width="@dimen/loadingmargintop"
+    android:layout_height="33dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/triplogo"
+        android:layout_width="@dimen/headerarrowimg"
+        android:layout_height="@dimen/headerarrowimg"
+android:layout_marginTop="@dimen/marginsmall"
+android:layout_toLeftOf="@+id/tabtittle"
+        />
+
+
+    <com.tripsolver.backoffice.model.CustomTextView
+        android:id="@+id/tabtittle"
+        android:layout_width="wrap_content"
+        app:customFont="Lato-Bold.ttf"
+        android:text="Min.Travel Time"
+        android:layout_marginLeft="@dimen/marginsmall"
+        android:layout_marginTop="@dimen/marginsmall"
+        android:textSize="@dimen/calandercellsize"
+android:textColor="@color/black"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
